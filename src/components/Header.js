@@ -21,7 +21,7 @@ const Header = (props) => {
  <a href="https://remotesoul.hashnode.dev/"><FontAwesomeIcon icon={faBlog} /></a>
         </SocialLink>
         <SocialLink>
-        <a href="/"><FontAwesomeIcon icon={faPrint}  /></a>
+        <a href="https://drive.google.com/file/d/12XrPmiSVI7pmnlgJFro_KTT8VvN5hV5q/view?usp=sharing"><FontAwesomeIcon icon={faPrint}  /></a>
             </SocialLink>
         <SocialLink> 
         <a href="https://twitter.com/YT99Dev"><FontAwesomeIcon icon={faTwitter} /></a>

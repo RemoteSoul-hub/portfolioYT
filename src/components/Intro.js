@@ -9,7 +9,7 @@ const Intro = (props) => {
         <TitleBig1>Design. Code. Debug</TitleBig1>
         <TitleSmall1>Creating Functional, Clean and Elegant Web Experiences.</TitleSmall1>
         <Resume>
-           <a href="/"> <p>Get My Resume </p> </a>
+           <a href="https://drive.google.com/file/d/12XrPmiSVI7pmnlgJFro_KTT8VvN5hV5q/view?usp=sharing"> <p>Get My Resume </p> </a>
         </Resume>
         </SmallerContainer>
         <ScrollMouse>
@@ -58,13 +58,14 @@ const TitleSmall = styled.h3`
 color: #5edcf8;
 font-weight: bold;
 margin-top: 15px;
+word-wrap: break-word;
 
 @media (max-width: 1000px) {
-    font-size: 15px;
+    font-size: 12px;
 	margin-left: 10%;
 }
 @media (max-width: 768px) {
-    font-size: 15px;
+    font-size: 10px;
 }
 `;
 
@@ -73,9 +74,11 @@ const TitleBig = styled.h1`
     font-size: 5em;
     font-weight: bold;
     letter-spacing: 1.1px;
+	word-wrap: break-word;
     @media (max-width: 1000px) {
-        font-size: 40px;
+        font-size: 20px;
 		margin-left: 10%;
+		word-wrap: break-word;
     }
 `;
 

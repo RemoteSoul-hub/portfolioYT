@@ -16,7 +16,7 @@ const Featured = (props) => {
         <TextDescription>
            <a href="https://show-streaming-react.web.app/"> <h1>Dragon Ball Plus</h1></a>
             <h3>Surf and find your favorite Dragon Ball product, be it Games, Movies, Mangas and Anime blu-rays.</h3>
-            <h3>This is was my second big <BlueText>Fullstack</BlueText> website using <BlueText>FireBase</BlueText> with <BlueText>Redux </BlueText>
+            <h3>This was my second big <BlueText>Fullstack</BlueText> website using <BlueText>FireBase</BlueText> with <BlueText>Redux </BlueText>
             and styled using <BlueText>Styled Components</BlueText>.</h3>
             <h3>The goal for this project was to make something that looks good but that is also functional and looks professional.</h3>
             <br/>
