@@ -133,6 +133,13 @@ const Logo = styled.div`
 
 const SocialLink = styled.div`
     margin-right: 20px;
+    a {
+        transition: transform .3s ease-out;
+        display: inline-block;
+    }
+    a:hover {
+  transform: translate(0, -5px);
+}
 `;
 
 

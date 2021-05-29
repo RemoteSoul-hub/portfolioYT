@@ -8,20 +8,20 @@ const Contact = (props) => {
         </TopContainer>
         <Flex>
             <TextDescription>
-                <h2>Currently Looking for new opportunities, my mail inbox is always open. Whether you want to start a conversation or just send some good vibes, I'll try my best to get back to you!</h2>
+                <h2>Currently looking for new opportunities, my mail inbox is always open. Whether you want to start a conversation or just send some good vibes, I'll try my best to get back to you!</h2>
                 <hr/>
             </TextDescription>
         </Flex>
         <h1>My E-Mail:</h1>
         <Resume>
-           <a href="/"> <p>yahya.tahoune@gmail.com </p> </a>
+           <a href="mailto:yahya.tahoune@gmail.com"> <p>yahya.tahoune@gmail.com </p> </a>
         </Resume>
     </Container>
 }
 const Container = styled.div`
     margin-bottom: 50px;
     background-color: #041831;
-    height: 70vh;
+    height: 90vh;
     color: #5edcf8;
     display: flex;
     flex-direction: column;

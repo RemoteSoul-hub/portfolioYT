@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import dbPlus from '../assets/dbplus.jpg';
 import portfolio from '../assets/portfolio.png';
+import microsoft from '../assets/microsoft.png';
+import { FaGithubAlt, FaTabletAlt } from "react-icons/fa";
 
 const Featured = (props) => {
     return <Container id="Featured">
@@ -10,17 +12,18 @@ const Featured = (props) => {
     </TopContainer>
     <Flex>
         <Image>
-        <img src={dbPlus} alt="DB Plus" /></Image>
+        <a href="https://show-streaming-react.web.app/"><img src={dbPlus} alt="DB Plus" /></a></Image>
         <TextDescription>
-            <h1>Dragon Ball Plus</h1>
+           <a href="https://show-streaming-react.web.app/"> <h1>Dragon Ball Plus</h1></a>
             <h3>Surf and find your favorite Dragon Ball product, be it Games, Movies, Mangas and Anime blu-rays.</h3>
-            <h3>This is was my second big <BlueText>Fullstack</BlueText> website using <BlueText>FireBase</BlueText> with <BlueText>Redux</BlueText>
+            <h3>This is was my second big <BlueText>Fullstack</BlueText> website using <BlueText>FireBase</BlueText> with <BlueText>Redux </BlueText>
             and styled using <BlueText>Styled Components</BlueText>.</h3>
             <h3>The goal for this project was to make something that looks good but that is also functional and looks professional.</h3>
             <br/>
              <Skills>
                  <h4><BlueText>►</BlueText> React  <BlueText>►</BlueText> JavaScript <BlueText>►</BlueText> Redux  <BlueText>►</BlueText> FireBase 🔥<BlueText>►</BlueText> Styled Components</h4>
              </Skills>
+             <Skills> <a href="https://github.com/RemoteSoul-hub/show-streaming-react"><FaGithubAlt size='2em'/></a> <a href="https://show-streaming-react.web.app/"><FaTabletAlt size='2em'/></a></Skills>
         </TextDescription>
     </Flex>
     <Flex>
@@ -32,21 +35,23 @@ const Featured = (props) => {
              <Skills>
                  <h4><BlueText>►</BlueText> React  <BlueText>►</BlueText> JavaScript  <BlueText>►</BlueText> Styled Components </h4>
              </Skills>
+             <Skills> <a href="https://github.com/RemoteSoul-hub/portfolioYT"><FaGithubAlt size='2em'/></a> <a href="/"><FaTabletAlt size='2em'/></a></Skills>
         </TextDescription>
         <Image>
-        <img src={portfolio} alt="" /></Image>
+     <a href="/"> <img src={portfolio} alt="" /></a>  </Image>
     </Flex>
     <Flex>
         <Image>
-        <img src={dbPlus} alt="" /></Image>
+     <a href="https://remotesoul-hub.github.io/microsoft_landingpage/">  <img src={microsoft} alt="" /></a> </Image>
         <TextDescription>
-            <h1>Microsoft : Landing Page</h1>
+         <a href="https://remotesoul-hub.github.io/microsoft_landingpage/">   <h1>Microsoft : Landing Page</h1></a>
             <h3>This was my first try at making a website's clone.</h3>
             <h3>I used Grid, Flex and basic <BlueText>CSS</BlueText> and <BlueText>HTML</BlueText> to make something that looks exactly like the landing page Microsoft had during 2020's Christmas time period.</h3>
             <br/>
              <Skills>
                  <h4><BlueText>►</BlueText> HTML5 <BlueText>►</BlueText> CSS3</h4>
              </Skills>
+             <Skills> <a href="https://github.com/RemoteSoul-hub/microsoft_landingpage"><FaGithubAlt size='2em'/></a> <a href="https://remotesoul-hub.github.io/microsoft_landingpage/"><FaTabletAlt size='2em'/></a></Skills>
         </TextDescription>
     </Flex>
 </Container>
@@ -168,6 +173,13 @@ const TextDescription = styled.div`
 const Skills = styled.div`
     white-space: no-wrap;
     padding: 10px;
+    a {
+        transition: transform .3s ease-out;
+        display: inline-block;
+    }
+    a:hover {
+  transform: translate(0, -5px);
+}
     `;
 
 export default Featured;

@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const MobileNav = (props) => {
     return <Container>
-        <a href="/"><span>About Me</span> </a>
-        <a href="/"><span>Projects</span> </a>
-        <a href="/"><span>Contact</span> </a>
+         <AnchorLink href='#About'><span>About</span></AnchorLink>
+   <AnchorLink href="#Featured"><span>Projects</span></AnchorLink>
+   <AnchorLink href="#Contact"><span>Contact</span></AnchorLink>
     </Container>
 
 }
