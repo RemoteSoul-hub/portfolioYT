@@ -11,7 +11,6 @@ const Intro = (props) => {
         <Resume>
            <a href="https://drive.google.com/file/d/12XrPmiSVI7pmnlgJFro_KTT8VvN5hV5q/view?usp=sharing"> <p>Get My Resume </p> </a>
         </Resume>
-        </SmallerContainer>
         <ScrollMouse>
         <span class="scroll-btn">
 	        <a href="/">
@@ -24,6 +23,7 @@ const Intro = (props) => {
 
 </span>
         </ScrollMouse>
+		</SmallerContainer>
     </Container>
 )};
 
@@ -34,15 +34,20 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     text-align: left;
     position: relative;
-	padding: 0 26px;
+	padding: 0 10px;
 	overflow: hidden; 
     @media (max-width: 1000px) {
+		padding: 0;
+		margin: 0;
         text-align: center;
-		height: 110vh;
+		justify-content: center;
     }
+	@media (min-width: 1000px) {
+		margin-top: 5%;
+	}
 `;
 
 const SmallerContainer = styled.div`
@@ -111,6 +116,7 @@ const TitleBig1 = styled(TitleBig)`
 const Resume = styled.button`
 font-size: 15px;
 margin-top: 2em;
+margin-left: 2em;
 padding: 20px 24px;
 height: 56px;
 border-radius: 4px;
@@ -147,11 +153,17 @@ const ScrollMouse = styled.div`
     align-items: center;
     justify-content: center;
 	margin-top: 50px;
-	margin-right: auto;
-	margin-left: 18%;
+	margin-right: 15%;
+	height: 20vh;
 
 	@media (min-width: 400px) and (max-width: 1000px) {
-		margin-left: 26%;
+	margin-left: 26%;
+	display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	margin-top: 50px;
+	margin-right: 2em;
 	}
 	
    p {
@@ -213,14 +225,18 @@ const ScrollMouse = styled.div`
 }
  .scroll-btn {
 	display: block;
-	position: relative;
+	inset: 0;
 	/* left: 0;
 	right: 0; */
 	text-align: center;
 	margin-left: 60%;
+	@media (min-width: 300px) and (max-width: 1000px) {
+		margin-left: 50%;
+	}
+	
 }
 .scroll-btn > * {
-	display: inline-block;
+	/* display: inline-block; */
 	line-height: 18px;
 	font-size: 13px;
 	font-weight: normal;
