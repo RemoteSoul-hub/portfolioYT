@@ -4,7 +4,7 @@ const Intro = (props) => {
     return (
     <Container>
         <SmallerContainer>
-        <TitleSmall>Hey it's me</TitleSmall>
+        <TitleSmall>Hey it's me!</TitleSmall>
         <TitleBig>Yahya Tahoune</TitleBig>
         <TitleBig1>Design. Code. Debug</TitleBig1>
         <TitleSmall1>Creating Functional, Clean and Elegant Web Experiences.</TitleSmall1>
@@ -46,12 +46,13 @@ const Container = styled.div`
 `;
 
 const SmallerContainer = styled.div`
-        margin-right: 15%;
+        margin-right: 25%;
         margin-bottom: 5%;
         position: relative;
         white-space: nowrap;
         @media (max-width: 1000px) {
 			margin-left: 0;
+			width: auto;
         }
 `;
 
@@ -60,27 +61,43 @@ color: #5edcf8;
 font-weight: bold;
 margin-top: 15px;
 word-wrap: break-word;
+display: block;
+margin-left: 2em;
 
-@media (max-width: 1000px) {
-    font-size: 12px;
-	margin-left: 10%;
-}
 @media (max-width: 768px) {
-    font-size: 10px;
+    font-size: 13px;
+	margin-left: 12%;
 }
+@media (max-width: 400px) {
+    font-size: 11px;
+}
+@media (min-width: 400px) and (max-width: 1000px) {
+		font-size: 12px;
+		padding: 10px;
+		margin-left: 13%;
+		word-wrap: break-word;
+	}
 `;
 
 const TitleBig = styled.h1`
+display: block;
     color: #fff;
     font-size: 5em;
     font-weight: bold;
     letter-spacing: 1.1px;
 	word-wrap: break-word;
-    @media (max-width: 1000px) {
+    @media (max-width: 400px) {
         font-size: 20px;
-		margin-left: 10%;
+		padding: 5px;
+		margin-left: 24%;
 		word-wrap: break-word;
     }
+	@media (min-width: 400px) and (max-width: 1000px) {
+		font-size: 20px;
+		padding: 10px;
+		margin-left: 30%;
+		word-wrap: break-word;
+	}
 `;
 
 const TitleSmall1 = styled(TitleSmall)`
@@ -93,12 +110,12 @@ const TitleBig1 = styled(TitleBig)`
 
 const Resume = styled.button`
 font-size: 15px;
-/* margin: 20px 22px 0px 0px; */
+margin-top: 2em;
 padding: 20px 24px;
 height: 56px;
 border-radius: 4px;
 cursor: pointer;
-display: flex;
+display: inline-block;
 align-items: center;
 justify-content: center;
 letter-spacing: 1.8px;
@@ -117,8 +134,11 @@ a {
 
 @media (max-width: 1000px) {
     margin-left: 25%;
-
+	text-decoration: none;
 }
+@media (min-width: 400px) and (max-width: 1000px) {
+		margin-left: 30%;
+	}
 `;
 
 const ScrollMouse = styled.div`
@@ -127,7 +147,13 @@ const ScrollMouse = styled.div`
     align-items: center;
     justify-content: center;
 	margin-top: 50px;
-	margin-right: 50px;
+	margin-right: auto;
+	margin-left: 18%;
+
+	@media (min-width: 400px) and (max-width: 1000px) {
+		margin-left: 26%;
+	}
+	
    p {
   margin-left: -1px;
 }

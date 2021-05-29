@@ -13,3 +13,7 @@ body {
 p {
   color: #041831;
 }
+
+a {
+  text-decoration: none;
+}

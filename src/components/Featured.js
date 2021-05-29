@@ -142,7 +142,6 @@ img:hover {
 }
 `;
 const TextDescription = styled.div`
-    margin-left: 50px;
     width: 50%;
         h1 {
         transition: 50ms ease-in-out;
@@ -176,6 +175,7 @@ const Skills = styled.div`
     a {
         transition: transform .3s ease-out;
         display: inline-block;
+        text-decoration: none;
     }
     a:hover {
   transform: translate(0, -5px);
