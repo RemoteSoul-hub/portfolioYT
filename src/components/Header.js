@@ -1,31 +1,36 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faPrint, faBlog } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 
 const Header = (props) => {
     return (
         <FullNav>
     <Nav>
-    <Logo>Logo</Logo>
+    <Logo>Yahya Tahoune</Logo>
     <Links>
-   <a href="/"><span>About Me</span></a>
-   <a href="/"><span>Projects</span></a>
-   <a href="/"><span>Contact</span></a>
+    <AnchorLink href='#About'><span>About</span></AnchorLink>
+   <AnchorLink href="#Featured"><span>Projects</span></AnchorLink>
+   <AnchorLink href="#Contact"><span>Contact</span></AnchorLink>
     </Links>
     </Nav>
-    <Social>
+    <Social className="actions">
         <SocialLink>
-            <a href="/"><FontAwesomeIcon icon={faCoffee} /></a>
+ <a href="https://remotesoul.hashnode.dev/"><FontAwesomeIcon icon={faBlog} /></a>
         </SocialLink>
         <SocialLink>
-        <a href="/"><FontAwesomeIcon icon={faCoffee} /></a>
+        <a href="/"><FontAwesomeIcon icon={faPrint}  /></a>
             </SocialLink>
         <SocialLink> 
-        <a href="/"><FontAwesomeIcon icon={faCoffee} /></a>
+        <a href="https://twitter.com/YT99Dev"><FontAwesomeIcon icon={faTwitter} /></a>
              </SocialLink>
         <SocialLink> 
-        <a href="/"><FontAwesomeIcon icon={faCoffee} /></a>
+        <a href="https://www.linkedin.com/in/yahyatahoune/"><FontAwesomeIcon icon={faLinkedin} /></a>
+         </SocialLink>
+         <SocialLink> 
+        <a href="https://github.com/RemoteSoul-hub"><FontAwesomeIcon icon={faGithub} /></a>
          </SocialLink>
     </Social>
     </FullNav>
@@ -79,6 +84,7 @@ margin-left: 25px;
             min-width: 100px;
             z-index: auto;
             text-decoration: none;
+
             span {
                 color: rgb(249,249,249);
                 font-size: 16px;
@@ -110,6 +116,9 @@ margin-left: 25px;
                 visibility: visible;
                 opacity: 1 !important;
             }
+            span:hover {
+                    color: #5edcf8;
+                }
         }
         }
     @media (max-width: 768px) {
@@ -125,6 +134,7 @@ const Logo = styled.div`
 const SocialLink = styled.div`
     margin-right: 20px;
 `;
+
 
 
 export default Header;

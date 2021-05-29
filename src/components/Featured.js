@@ -1,45 +1,51 @@
 import styled from 'styled-components';
 import dbPlus from '../assets/dbplus.jpg';
+import portfolio from '../assets/portfolio.png';
 
 const Featured = (props) => {
-    return <Container>
+    return <Container id="Featured">
     <TopContainer>
     <Line></Line>
     <Title><BlueText>F</BlueText>eatured</Title>
     </TopContainer>
     <Flex>
         <Image>
-        <img src={dbPlus} alt="" /></Image>
+        <img src={dbPlus} alt="DB Plus" /></Image>
         <TextDescription>
-            <h1>Project Title</h1>
-            <h3>Project Description</h3>
+            <h1>Dragon Ball Plus</h1>
+            <h3>Surf and find your favorite Dragon Ball product, be it Games, Movies, Mangas and Anime blu-rays.</h3>
+            <h3>This is was my second big <BlueText>Fullstack</BlueText> website using <BlueText>FireBase</BlueText> with <BlueText>Redux</BlueText>
+            and styled using <BlueText>Styled Components</BlueText>.</h3>
+            <h3>The goal for this project was to make something that looks good but that is also functional and looks professional.</h3>
             <br/>
              <Skills>
-                 <h4><BlueText>►</BlueText> React  <BlueText>►</BlueText> TypeScript  <BlueText>►</BlueText> JavaScript  <BlueText>►</BlueText> MySQL  <BlueText>►</BlueText> WordPress <BlueText>►</BlueText> Firebase  <BlueText>►</BlueText> Styled Components <BlueText>►</BlueText> HTML5 <BlueText>►</BlueText> SASS</h4>
+                 <h4><BlueText>►</BlueText> React  <BlueText>►</BlueText> JavaScript <BlueText>►</BlueText> Redux  <BlueText>►</BlueText> FireBase 🔥<BlueText>►</BlueText> Styled Components</h4>
              </Skills>
         </TextDescription>
     </Flex>
     <Flex>
     <TextDescription>
-            <h1>Project Title</h1>
-            <h3>Project Description</h3>
+            <h1>This Website</h1>
+            <h3>My portfolio website is built with <BlueText>React</BlueText>.</h3>
+            <h3>Styling is done using <BlueText>Styled Components</BlueText> and keeps the same colors from my very first portfolio that used <BlueText>SASS, GSAP</BlueText> and <BlueText>HTML5</BlueText>.</h3>
             <br/>
              <Skills>
-                 <h4><BlueText>►</BlueText> React  <BlueText>►</BlueText> TypeScript  <BlueText>►</BlueText> JavaScript  <BlueText>►</BlueText> MySQL  <BlueText>►</BlueText> WordPress <BlueText>►</BlueText> Firebase  <BlueText>►</BlueText> Styled Components <BlueText>►</BlueText> HTML5 <BlueText>►</BlueText> SASS</h4>
+                 <h4><BlueText>►</BlueText> React  <BlueText>►</BlueText> JavaScript  <BlueText>►</BlueText> Styled Components </h4>
              </Skills>
         </TextDescription>
         <Image>
-        <img src={dbPlus} alt="" /></Image>
+        <img src={portfolio} alt="" /></Image>
     </Flex>
     <Flex>
         <Image>
         <img src={dbPlus} alt="" /></Image>
         <TextDescription>
-            <h1>Project Title</h1>
-            <h3>Project Description</h3>
+            <h1>Microsoft : Landing Page</h1>
+            <h3>This was my first try at making a website's clone.</h3>
+            <h3>I used Grid, Flex and basic <BlueText>CSS</BlueText> and <BlueText>HTML</BlueText> to make something that looks exactly like the landing page Microsoft had during 2020's Christmas time period.</h3>
             <br/>
              <Skills>
-                 <h4><BlueText>►</BlueText> React  <BlueText>►</BlueText> TypeScript  <BlueText>►</BlueText> JavaScript  <BlueText>►</BlueText> MySQL  <BlueText>►</BlueText> WordPress <BlueText>►</BlueText> Firebase  <BlueText>►</BlueText> Styled Components <BlueText>►</BlueText> HTML5 <BlueText>►</BlueText> SASS</h4>
+                 <h4><BlueText>►</BlueText> HTML5 <BlueText>►</BlueText> CSS3</h4>
              </Skills>
         </TextDescription>
     </Flex>
@@ -125,11 +131,21 @@ img {
 }
 img:hover {
     border: 2px #5edcf8 solid;
+    box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px,
+        rgb(0 0 0 / 72%) 0px 30px 22px -10px;
+      transform: scale(1.05);
 }
 `;
 const TextDescription = styled.div`
     margin-left: 50px;
     width: 50%;
+        h1 {
+        transition: 50ms ease-in-out;
+        cursor: pointer;
+    }
+    h1:hover {
+        color: royalblue;
+    }
         h2 {
             font-size: 22px;
             padding: 20px;

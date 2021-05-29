@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import profile from '../assets/me.png';
 
 const About = (props) => {
-    return <Container>
+    return <Container id="About">
         <TopContainer>
         <Line></Line>
         <Title><BlueText>A</BlueText>bout Me</Title>

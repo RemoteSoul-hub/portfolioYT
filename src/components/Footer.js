@@ -17,4 +17,5 @@ const Copyright = styled.div`
      align-items: center;
      height: 10vh;
 `;
+
 export default Footer;

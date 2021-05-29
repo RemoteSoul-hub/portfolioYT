@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Contact = (props) => {
-    return <Container>
+    return <Container id="Contact">
         <TopContainer>
         <Line></Line>
         <Title><BlueText>C</BlueText>ontact</Title>
@@ -133,8 +133,8 @@ a {
 }
 
 @media (max-width: 1000px) {
-    margin-left: 35%;
-
+    height: 20px;
+    font-size: 12px;
 }
 `;
 
