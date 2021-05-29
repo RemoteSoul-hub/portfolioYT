@@ -41,6 +41,7 @@ const Container = styled.div`
 	overflow: hidden; 
     @media (max-width: 1000px) {
         text-align: center;
+		height: 110vh;
     }
 `;
 
@@ -92,7 +93,7 @@ const TitleBig1 = styled(TitleBig)`
 
 const Resume = styled.button`
 font-size: 15px;
-margin: 20px 22px 0px 0px;
+/* margin: 20px 22px 0px 0px; */
 padding: 20px 24px;
 height: 56px;
 border-radius: 4px;
@@ -115,7 +116,7 @@ a {
 }
 
 @media (max-width: 1000px) {
-    margin-left: 35%;
+    margin-left: 25%;
 
 }
 `;
@@ -126,8 +127,9 @@ const ScrollMouse = styled.div`
     align-items: center;
     justify-content: center;
 	margin-top: 50px;
+	margin-right: 50px;
    p {
-  margin-left: -65px;
+  margin-left: -1px;
 }
 @-webkit-keyframes ani-mouse {
 	0% {
@@ -185,10 +187,11 @@ const ScrollMouse = styled.div`
 }
  .scroll-btn {
 	display: block;
-	position: absolute;
-	left: 0;
-	right: 0;
+	position: relative;
+	/* left: 0;
+	right: 0; */
 	text-align: center;
+	margin-left: 60%;
 }
 .scroll-btn > * {
 	display: inline-block;
@@ -224,7 +227,7 @@ const ScrollMouse = styled.div`
 	border-radius: 23px;
 }
 .scroll-btn .mouse > * {
-	position: absolute;
+	position: relative;
 	display: block;
 	top: 29%;
 	left: 50%;
