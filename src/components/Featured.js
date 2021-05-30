@@ -68,7 +68,7 @@ const Container = styled.div`
     justify-content: center;
     text-align: left;
     position: relative;
-    padding: 0 50px;
+    padding: 0 26px;
     a{
         color: white;
     }
@@ -135,6 +135,7 @@ const Flex = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    width: 80vw;
     /* width: 80%; */
     @media (max-width: 1200px) {
         flex-direction: column;
@@ -152,12 +153,12 @@ img {
     cursor: pointer;
     padding: 5px;
     @media (max-width: 768px) {
-        height: 25vh;
-        width: auto;
+        height: auto;
+        width: 80vw;
     }
     @media (min-width: 768px) and (max-width: 1200px) {
-            height: 35vh;
-            width: auto;
+        height: auto;
+        width: 80vw;
         }
 }
 img:hover {
@@ -168,6 +169,7 @@ img:hover {
 }
 `;
 const TextDescription = styled.div`
+min-width: 50%;
     width: 50%;
     color: white;
         h1 {
