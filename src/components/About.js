@@ -119,7 +119,6 @@ img {
         height: 25vh;
     }
     @media (max-width: 900px) {
-        margin-left: 40%;
         height: 30vh;
     }
     @media (max-width: 1100px) {
