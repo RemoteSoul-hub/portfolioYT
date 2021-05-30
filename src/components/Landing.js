@@ -17,7 +17,7 @@ const Landing = (props) => {
                 <MouseText>Scroll Down</MouseText>
             </MovingMouseHolder>
         </Content>
-        TEXT</Container>
+</Container>
 }
 
 const Container = styled.section`
