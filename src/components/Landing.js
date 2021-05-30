@@ -71,7 +71,7 @@ width: 100%;
      color: #f9f9f9;
      font-weight: normal;
  }
- @media (max-width: 768px) {
+ @media (max-width: 767px) {
     h1 {
         font-size: 20px;
 		padding: 5px;
@@ -88,14 +88,26 @@ width: 100%;
         font-size: 11px;
    }
 }
-@media (min-width: 400px) and (max-width: 1000px) {
+@media (min-width: 767px) and (max-width: 900px) {
     h3 {
-		font-size: 13px;
-		padding: 10px;
+		font-size: 25px;
+		padding: 80px 20px;
 		word-wrap: break-word;
 	}
     h1 {
 		font-size: 23px;
+		padding: 10px;
+		word-wrap: break-word;
+	}
+}
+@media (min-width: 900px) and (max-width: 1100px) {
+    h3 {
+		font-size: 27px;
+		padding: 80px 20px;
+		word-wrap: break-word;
+	}
+    h1 {
+		font-size: 35px;
 		padding: 10px;
 		word-wrap: break-word;
 	}

@@ -21,7 +21,7 @@ const Contact = (props) => {
 const Container = styled.div`
     margin-bottom: 50px;
     background-color: #041831;
-    height: 90vh;
+    height: auto;
     color: #5edcf8;
     display: flex;
     flex-direction: column;
@@ -39,6 +39,9 @@ const Container = styled.div`
     h2{
         margin-top: 1.5em;
         font-weight: normal;
+    }
+    @media (min-width: 900px) and (max-width: 1100px) {
+        height: auto;
     }
     `;
     const TopContainer = styled.div`
@@ -61,7 +64,7 @@ const Line = styled.div`
     transform: scale(0.8);
     transition: transform 250ms ease-in;
     margin-left: -110%;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         position: absolute;
         margin-left: 0;
         height: 1px;
@@ -100,7 +103,7 @@ const Flex = styled.div`
     justify-content: center;
     align-items: flex-start;
     margin-top: 20px;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         flex-direction: column;
     }
 `;

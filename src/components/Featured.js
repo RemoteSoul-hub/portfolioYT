@@ -205,18 +205,28 @@ const TextDescription = styled.div`
                 font-size: 12px;
           }
         }
+        @media (min-width: 769px) and (max-width: 1100px) {
+            width: auto;
+            margin-left: 0;
+          h1 {
+              margin-top: 20px;
+            font-size: 22px;
+          }
+          h3 {
+                font-size: 16px;
+          }
+        }
 `;
 const Skills = styled.div`
     white-space: no-wrap;
     padding: 10px;
-    a {
-        transition: transform .3s ease-out;
-        display: inline-block;
-        text-decoration: none;
-    }
-    a:hover {
-  transform: translate(0, -5px);
-}
+    @media (min-width: 769px) and (max-width: 1200px) {
+          h4 {
+              margin-top: 10px;
+            font-size: 20px;
+            text-align: center;
+          }
+        }
     `;
 
 export default Featured;

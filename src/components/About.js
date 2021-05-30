@@ -77,7 +77,7 @@ const Title = styled.div`
 		margin-left: 24%;
 		word-wrap: break-word;
     }
-	@media (min-width: 400px) and (max-width: 1000px) {
+	@media (min-width: 400px) and (max-width: 900px) {
 		font-size: 20px;
 		padding: 10px;
 		margin-left: 30%;
@@ -96,8 +96,9 @@ const Flex = styled.div`
     justify-content: center;
     align-items: flex-start;
     margin-top: 20px;
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         flex-direction: column;
+        align-items: center;
     }
 `;
 const Image = styled.div`
@@ -114,9 +115,13 @@ img {
     transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
     cursor: pointer;
     padding: 5px;
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
         margin-left: 40%;
         height: 30vh;
+    }
+    @media (max-width: 1100px) {
+        height: 40vh;
+        margin-bottom: 40px;
     }
 }
 img:hover {
@@ -131,7 +136,6 @@ const TextDescription = styled.div`
 flex-direction: column;
 justify-content: center;
 align-items: center;
-
         h2 {
             font-size: 22px;
             padding: 20px;
@@ -146,7 +150,7 @@ align-items: center;
             font-weight: normal;
             padding: 10px;
         }
-        @media (max-width: 768px) {
+    @media (min-width: 300px) and (max-width: 768px) {
             width: auto;
             margin-left: 0;
           h1 {
@@ -156,11 +160,30 @@ align-items: center;
           h3 {
                 font-size: 12px;
           }
+    }
+    @media (min-width: 769px) and (max-width: 1200px) {
+            width: auto;
+            margin-left:0;
+          h1 {
+              margin-top: 20px;
+            font-size: 40px;
+            text-align: center
+          }
+          h3 {
+                font-size: 25px;
+          }
         }
 `;
 const Skills = styled.div`
     white-space: no-wrap;
     padding: 10px;
+    @media (min-width: 769px) and (max-width: 1200px) {
+          h4 {
+              margin-top: 20px;
+            font-size: 40px;
+            text-align: center
+          }
+        }
     `;
 
 export default About;
