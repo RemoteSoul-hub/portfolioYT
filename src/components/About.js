@@ -115,7 +115,7 @@ img {
     cursor: pointer;
     padding: 5px;
     @media (max-width: 768px) {
-        margin-left: 60%;
+        margin-left: 40%;
         height: 30vh;
     }
 }

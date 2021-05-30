@@ -169,7 +169,7 @@ img:hover {
 }
 `;
 const TextDescription = styled.div`
-min-width: 50%;
+    min-width: 50%;
     width: 50%;
     color: white;
         h1 {

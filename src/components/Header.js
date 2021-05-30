@@ -130,6 +130,11 @@ const Logo = styled.div`
         padding-left: 10px;
         color: #fff;
         font-weight: bold;
+        @media (max-width: 768px) {
+            font-size: 15px;
+            text-decoration: underline;
+            color: #5edcf8;
+        }
 `;
 
 

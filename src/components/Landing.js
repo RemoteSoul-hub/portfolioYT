@@ -90,12 +90,12 @@ width: 100%;
 }
 @media (min-width: 400px) and (max-width: 1000px) {
     h3 {
-		font-size: 12px;
+		font-size: 13px;
 		padding: 10px;
 		word-wrap: break-word;
 	}
     h1 {
-		font-size: 20px;
+		font-size: 23px;
 		padding: 10px;
 		word-wrap: break-word;
 	}
