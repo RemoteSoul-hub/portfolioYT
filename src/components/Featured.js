@@ -135,6 +135,7 @@ const Flex = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    /* width: 80%; */
     @media (max-width: 1200px) {
         flex-direction: column;
     }
