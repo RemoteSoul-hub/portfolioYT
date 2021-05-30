@@ -8,7 +8,7 @@ const Landing = (props) => {
                 <h1>Yahya Tahoune</h1>
                 <h1><BlueText> Design. Code. Design</BlueText></h1>
                <h3>Creating functional, clean and elegant Web experiences.</h3>
-                <Resume><a href="/"> Get my resume</a></Resume>
+                <Resume><a href="https://drive.google.com/file/d/12XrPmiSVI7pmnlgJFro_KTT8VvN5hV5q/view?usp=sharing"> Get my resume</a></Resume>
             </CTN>
             <MovingMouseHolder>
                 <Mouse>
@@ -27,6 +27,10 @@ display: flex;
 flex-direction: column;
 text-align: center;
 height: 100vh;
+
+    @media (max-width: 1100px) {
+        height: auto;
+    }
 `;
 
 const Content = styled.div`
