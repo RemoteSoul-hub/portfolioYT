@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #fff;
   font-family: Poppins, sans-serif;
 }
 
 body {
   background-color: #041831;
+  overflow-x: hidden;
 }
 
 p {
@@ -16,4 +16,9 @@ p {
 
 a {
   text-decoration: none;
+}
+@keyframes mouse-scroll {
+  to {
+    transform: translate(0, 6px) scale(1, 0.8);
+  }
 }

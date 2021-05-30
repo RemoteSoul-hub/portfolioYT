@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Intro = (props) => {
     return (
@@ -13,12 +14,12 @@ const Intro = (props) => {
         </Resume>
         <ScrollMouse>
         <span class="scroll-btn">
-	        <a href="/">
+	        <AnchorLink href="#About">
 		<span class="mouse">
 			<span>
 			</span>
 		</span>
-	</a>
+	</AnchorLink>
   <p>Scroll down</p>
 
 </span>
@@ -55,6 +56,10 @@ const SmallerContainer = styled.div`
         margin-bottom: 5%;
         position: relative;
         white-space: nowrap;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
         @media (max-width: 1000px) {
 			margin-left: 0;
 			width: auto;
@@ -66,8 +71,11 @@ color: #5edcf8;
 font-weight: bold;
 margin-top: 15px;
 word-wrap: break-word;
-display: block;
+display: flex;
 margin-left: 2em;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 
 @media (max-width: 768px) {
     font-size: 13px;
@@ -91,6 +99,10 @@ display: block;
     font-weight: bold;
     letter-spacing: 1.1px;
 	word-wrap: break-word;
+	display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
     @media (max-width: 400px) {
         font-size: 20px;
 		padding: 5px;
@@ -117,6 +129,10 @@ const Resume = styled.button`
 font-size: 15px;
 margin-top: 2em;
 margin-left: 2em;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 padding: 20px 24px;
 height: 56px;
 border-radius: 4px;

@@ -18,19 +18,19 @@ const Header = (props) => {
     </Nav>
     <Social className="actions">
         <SocialLink>
- <a href="https://remotesoul.hashnode.dev/"><FontAwesomeIcon icon={faBlog} /></a>
+ <a href="https://remotesoul.hashnode.dev/"><FontAwesomeIcon icon={faBlog} size="lg"/></a>
         </SocialLink>
         <SocialLink>
-        <a href="https://drive.google.com/file/d/12XrPmiSVI7pmnlgJFro_KTT8VvN5hV5q/view?usp=sharing"><FontAwesomeIcon icon={faPrint}  /></a>
+        <a href="https://drive.google.com/file/d/12XrPmiSVI7pmnlgJFro_KTT8VvN5hV5q/view?usp=sharing"><FontAwesomeIcon icon={faPrint}  size="lg"/></a>
             </SocialLink>
         <SocialLink> 
-        <a href="https://twitter.com/YT99Dev"><FontAwesomeIcon icon={faTwitter} /></a>
+        <a href="https://twitter.com/YT99Dev"><FontAwesomeIcon icon={faTwitter} size="lg"/></a>
              </SocialLink>
         <SocialLink> 
-        <a href="https://www.linkedin.com/in/yahyatahoune/"><FontAwesomeIcon icon={faLinkedin} /></a>
+        <a href="https://www.linkedin.com/in/yahyatahoune/"><FontAwesomeIcon icon={faLinkedin} size="lg"/></a>
          </SocialLink>
          <SocialLink> 
-        <a href="https://github.com/RemoteSoul-hub"><FontAwesomeIcon icon={faGithub} /></a>
+        <a href="https://github.com/RemoteSoul-hub"><FontAwesomeIcon icon={faGithub} size="lg"/></a>
          </SocialLink>
     </Social>
     </FullNav>
@@ -128,17 +128,22 @@ margin-left: 25px;
 `;
 const Logo = styled.div`
         padding-left: 10px;
+        color: #fff;
+        font-weight: bold;
 `;
 
 
 const SocialLink = styled.div`
-    margin-right: 20px;
+    margin-right: 20px; 
     a {
         transition: transform .3s ease-out;
         display: inline-block;
+        color: #fff;
+        border-radius: 70%;
     }
     a:hover {
   transform: translate(0, -5px);
+  background-color: black;
 }
 `;
 

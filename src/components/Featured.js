@@ -69,12 +69,22 @@ const Container = styled.div`
     text-align: left;
     position: relative;
     padding: 0 50px;
+    a{
+        color: white;
+    }
     `;
     const TopContainer = styled.div`
-    margin-right: 41%;
     position: relative;
     white-space: nowrap;
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    @media (max-width: 768px) {
+        margin-left: -40%;
+    }
 `;
 const Line = styled.div`
     display: block;
@@ -88,6 +98,9 @@ const Line = styled.div`
     margin-left: -110%;
     @media (max-width: 768px) {
         position: absolute;
+        margin-left: 0;
+        height: 1px;
+        width: 50%;
     }
 `;
 const Title = styled.div`
@@ -96,9 +109,19 @@ const Title = styled.div`
     margin-left: -100%;
     font-weight: bold;
     display: block;
-    @media (max-width: 768px) {
-        position: absolute;
+    color: white;
+    @media (max-width: 400px) {
+        font-size: 20px;
+		padding: 5px;
+		margin-left: 24%;
+		word-wrap: break-word;
     }
+	@media (min-width: 400px) and (max-width: 1000px) {
+		font-size: 20px;
+		padding: 10px;
+		margin-left: 30%;
+		word-wrap: break-word;
+	}
 `;
 
 const BlueText = styled.div`
@@ -129,9 +152,11 @@ img {
     padding: 5px;
     @media (max-width: 768px) {
         height: 25vh;
+        width: auto;
     }
     @media (min-width: 768px) and (max-width: 1200px) {
             height: 35vh;
+            width: auto;
         }
 }
 img:hover {
@@ -143,6 +168,7 @@ img:hover {
 `;
 const TextDescription = styled.div`
     width: 50%;
+    color: white;
         h1 {
         transition: 50ms ease-in-out;
         cursor: pointer;
@@ -167,6 +193,14 @@ const TextDescription = styled.div`
         }
         @media (max-width: 768px) {
             width: auto;
+            margin-left: 0;
+          h1 {
+              margin-top: 20px;
+            font-size: 20px;
+          }
+          h3 {
+                font-size: 12px;
+          }
         }
 `;
 const Skills = styled.div`

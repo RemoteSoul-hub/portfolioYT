@@ -30,7 +30,9 @@ const Container = styled.div`
     text-align: left;
     position: relative;
     padding: 0 26px;
+    color: white;
     h1{
+        font-size: 21px;
         margin-top: 1.5em;
         color:#5edcf8; 
     }
@@ -40,6 +42,10 @@ const Container = styled.div`
     }
     `;
     const TopContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     margin-right: 41%;
     position: relative;
     white-space: nowrap;
@@ -57,6 +63,9 @@ const Line = styled.div`
     margin-left: -110%;
     @media (max-width: 768px) {
         position: absolute;
+        margin-left: 0;
+        height: 1px;
+        width: 30%;
     }
 `;
 const Title = styled.div`
@@ -65,9 +74,19 @@ const Title = styled.div`
     margin-left: -100%;
     font-weight: bold;
     display: block;
-    @media (max-width: 768px) {
-        position: absolute;
+    color: white;
+    @media (max-width: 400px) {
+        font-size: 20px;
+		padding: 5px;
+		margin-left: 24%;
+		word-wrap: break-word;
     }
+	@media (min-width: 400px) and (max-width: 1000px) {
+		font-size: 20px;
+		padding: 10px;
+		margin-left: 30%;
+		word-wrap: break-word;
+	}
 `;
 
 const BlueText = styled.div`
@@ -106,6 +125,14 @@ const TextDescription = styled.div`
         }
         @media (max-width: 768px) {
             width: auto;
+            margin-left: 0;
+        h2 {
+              margin-top: 20px;
+            font-size: 20px;
+          }
+          h3 {
+                font-size: 12px;
+          }
         }
 `;
 const Resume = styled.button`

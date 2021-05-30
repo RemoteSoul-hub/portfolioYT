@@ -16,6 +16,7 @@ const Copyright = styled.div`
      justify-content: space-around;
      align-items: center;
      height: 10vh;
+     color: white;
 `;
 
 export default Footer;

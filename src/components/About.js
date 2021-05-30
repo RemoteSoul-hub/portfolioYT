@@ -24,8 +24,8 @@ const About = (props) => {
 }
 
 const Container = styled.div`
-margin-top: 30%;
-    margin-bottom: 50px;
+/* margin-top: 30%;
+    margin-bottom: 50px; */
     background-color: #041831;
     height: 100%;
     color: #5edcf8;
@@ -38,10 +38,14 @@ margin-top: 30%;
     padding: 0 26px;
     `;
     const TopContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     margin-right: 41%;
     position: relative;
     white-space: nowrap;
-    padding: 50px;
+    padding: 20px;
 `;
 const Line = styled.div`
     display: block;
@@ -55,6 +59,9 @@ const Line = styled.div`
     margin-left: -110%;
     @media (max-width: 768px) {
         position: absolute;
+        margin-left: 0;
+        height: 1px;
+        width: 50%;
     }
 `;
 const Title = styled.div`
@@ -63,9 +70,19 @@ const Title = styled.div`
     margin-left: -100%;
     font-weight: bold;
     display: block;
-    @media (max-width: 768px) {
-        position: absolute;
+    color: white;
+    @media (max-width: 400px) {
+        font-size: 20px;
+		padding: 5px;
+		margin-left: 24%;
+		word-wrap: break-word;
     }
+	@media (min-width: 400px) and (max-width: 1000px) {
+		font-size: 20px;
+		padding: 10px;
+		margin-left: 30%;
+		word-wrap: break-word;
+	}
 `;
 
 const BlueText = styled.div`
@@ -85,6 +102,10 @@ const Flex = styled.div`
 `;
 const Image = styled.div`
 position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 img {
     width: auto;
     height: 60vh;
@@ -105,6 +126,12 @@ img:hover {
 const TextDescription = styled.div`
     margin-left: 50px;
     width: 50%;
+    color: white;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
         h2 {
             font-size: 22px;
             padding: 20px;
@@ -121,6 +148,14 @@ const TextDescription = styled.div`
         }
         @media (max-width: 768px) {
             width: auto;
+            margin-left: 0;
+          h1 {
+              margin-top: 20px;
+            font-size: 20px;
+          }
+          h3 {
+                font-size: 12px;
+          }
         }
 `;
 const Skills = styled.div`
