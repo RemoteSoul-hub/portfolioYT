@@ -1,7 +1,6 @@
 import './App.css';
 import {BrowserRouter as Router} from 'react-router-dom';
 import Header from './components/Header';
-import Intro from './components/Intro';
 import MobileNav from './components/MobileNav';
 import About from './components/About';
 import Featured from './components/Featured';
