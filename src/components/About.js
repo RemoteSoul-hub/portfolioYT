@@ -158,10 +158,10 @@ align-items: center;
             margin-left: 0;
           h1 {
               margin-top: 20px;
-            font-size: 20px;
+            font-size: 22px;
           }
           h3 {
-                font-size: 12px;
+                font-size: 14px;
           }
     }
     @media (min-width: 769px) and (max-width: 1200px) {
@@ -185,6 +185,13 @@ const Skills = styled.div`
               margin-top: 20px;
             font-size: 40px;
             text-align: center
+          }
+        }
+        @media (min-width: 300px) and (max-width: 768px) {
+          h4 {
+              margin-top: 20px;
+            font-size: 14px;
+            text-align: center;
           }
         }
     `;
