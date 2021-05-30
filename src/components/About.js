@@ -115,6 +115,9 @@ img {
     transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
     cursor: pointer;
     padding: 5px;
+    @media (max-width: 768px) {
+        height: 25vh;
+    }
     @media (max-width: 900px) {
         margin-left: 40%;
         height: 30vh;
