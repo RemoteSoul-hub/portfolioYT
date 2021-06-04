@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import dbPlus from '../assets/dbplus.jpg';
 import portfolio from '../assets/portfolio.png';
 import microsoft from '../assets/microsoft.png';
+import levibe from '../assets/levibe.jpg';
 import { FaGithubAlt, FaTabletAlt } from "react-icons/fa";
 
 const Featured = (props) => {
@@ -10,6 +11,21 @@ const Featured = (props) => {
     <Line></Line>
     <Title><BlueText>F</BlueText>eatured</Title>
     </TopContainer>
+    <Flex>
+    <TextDescription>
+            <h1>Le Vibe Community (My Current Focus)</h1>
+            <h3>This ambitious Web App is aimed to be a social media platform operating thanks to <BlueText>Firebase</BlueText>'s powerful backend and <BlueText>ReactJs</BlueText>'s frontend and Hooks.</h3>
+            <h3>Le Vibe is only adapted for computer screens as of now, as I am prioritizing functionality over design. 
+                To get states from different components and make them all communicate with each other, I have used <BlueText>Context API</BlueText> this time around.</h3>
+            <br/>
+             <Skills>
+                 <h4><BlueText>►</BlueText> React  <BlueText>►</BlueText> JavaScript  <BlueText>►</BlueText> Firebase <BlueText>►</BlueText> ContextAPI</h4>
+             </Skills>
+             <Skills> <a href="https://github.com/RemoteSoul-hub/vibing-media"><FaGithubAlt size='2em'/></a> <a href="https://vibing-media.firebaseapp.com/"><FaTabletAlt size='2em'/></a></Skills>
+        </TextDescription>
+        <Image>
+     <a href="https://vibing-media.firebaseapp.com/"> <img src={levibe} alt="" /></a>  </Image>
+    </Flex>
     <Flex>
         <Image>
         <a href="https://show-streaming-react.web.app/"><img src={dbPlus} alt="DB Plus" /></a></Image>

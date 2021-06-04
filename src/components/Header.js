@@ -82,6 +82,7 @@ margin-left: 25px;
             padding: 10px;
             display: flex;
             min-width: 100px;
+            text-align: center;
             z-index: auto;
             text-decoration: none;
 
