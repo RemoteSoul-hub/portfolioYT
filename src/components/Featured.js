@@ -13,7 +13,7 @@ const Featured = (props) => {
     </TopContainer>
     <Flex>
     <TextDescription>
-            <h1>Le Vibe Community (My Current Focus)</h1>
+          <a href="https://vibing-media.firebaseapp.com/"><h1>Le Vibe Community (My Current Focus)</h1></a>
             <h3>This ambitious Web App is aimed to be a social media platform operating thanks to <BlueText>Firebase</BlueText>'s powerful backend and <BlueText>ReactJs</BlueText>'s frontend and Hooks.</h3>
             <h3>Le Vibe is only adapted for computer screens as of now, as I am prioritizing functionality over design. 
                 To get states from different components and make them all communicate with each other, I have used <BlueText>Context API</BlueText> this time around.</h3>
