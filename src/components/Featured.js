@@ -11,7 +11,7 @@ const Featured = (props) => {
     <Line></Line>
     <Title><BlueText>F</BlueText>eatured</Title>
     </TopContainer>
-    <Flex>
+    <Flex1>
     <TextDescription>
           <a href="https://vibing-media.firebaseapp.com/"><h1>Le Vibe Community (My Current Focus)</h1></a>
             <h3>This ambitious Web App is aimed to be a social media platform operating thanks to <BlueText>Firebase</BlueText>'s powerful backend and <BlueText>ReactJs</BlueText>'s frontend and Hooks.</h3>
@@ -25,7 +25,7 @@ const Featured = (props) => {
         </TextDescription>
         <Image>
      <a href="https://vibing-media.firebaseapp.com/"> <img src={levibe} alt="" /></a>  </Image>
-    </Flex>
+    </Flex1>
     <Flex>
         <Image>
         <a href="https://show-streaming-react.web.app/"><img src={dbPlus} alt="DB Plus" /></a></Image>
@@ -42,7 +42,7 @@ const Featured = (props) => {
              <Skills> <a href="https://github.com/RemoteSoul-hub/show-streaming-react"><FaGithubAlt size='2em'/></a> <a href="https://show-streaming-react.web.app/"><FaTabletAlt size='2em'/></a></Skills>
         </TextDescription>
     </Flex>
-    <Flex>
+    <Flex1>
     <TextDescription>
             <h1>This Website</h1>
             <h3>My portfolio website is built with <BlueText>React</BlueText>.</h3>
@@ -55,7 +55,7 @@ const Featured = (props) => {
         </TextDescription>
         <Image>
      <a href="/"> <img src={portfolio} alt="" /></a>  </Image>
-    </Flex>
+    </Flex1>
     <Flex>
         <Image>
      <a href="https://remotesoul-hub.github.io/microsoft_landingpage/">  <img src={microsoft} alt="" /></a> </Image>
@@ -157,6 +157,20 @@ const Flex = styled.div`
         flex-direction: column;
     }
 `;
+
+const Flex1 = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 80vw;
+    /* width: 80%; */
+    @media (max-width: 1200px) {
+        flex-direction: column-reverse;
+    }
+`;
+
 const Image = styled.div`
 position: relative;
 padding: 10px;
